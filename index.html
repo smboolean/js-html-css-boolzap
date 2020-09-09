@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Boolzapp</title>
+  </head>
+  <body>
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+      <!-- app container -->
+      <div class="container clearfix">
+        <!-- col left -->
+        <div class="col-left float-left">
+          <!-- header col left -->
+          <div class="header">
+            <!-- avatar -->
+            <div class="avatar-img">
+              <img src="img/avatar_io.jpg" alt="Immagine Avatar">
+            </div>
+            <!-- /avatar -->
+            <!-- icons header -->
+            <ul class="icons list-inline">
+              <li><i class="fas fa-circle-notch"></i></li>
+              <li><i class="fas fa-comment-alt"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+            <!-- /icons header -->
+          </div>
+          <!-- /header col left -->
+          <!-- notifications -->
+          <div class="notifications">
+            <div class="notification-icon">
+              <i class="fa fa-bell-slash" aria-hidden="true"></i>
+            </div>
+            <div class="notification-text">
+              <h3>Ricevi notifiche di nuovi messaggi</h3>
+              <a href="#">Attiva notifiche desktop</a>
+            </div>
+          </div>
+          <!-- /notifications -->
+          <!-- search -->
+          <div class="search">
+            <label class="search-label" for="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </label>
+            <input id="search" name="search" type="text" placeholder="Cerca o inizia una nuova chat">
+          </div>
+          <!-- /search -->
+          <!-- contacts -->
+          <ul class="contacts">
+            <!-- contact -->
+            <li class="contact">
+              <!-- contact avatar -->
+              <div class="avatar-img">
+                <img src="img/avatar_1.jpg" alt="Pincopallo">
+              </div>
+              <!-- /contact avatar -->
+              <!-- contact text -->
+              <div class="contact-text">
+                <h4 class="contact-name">Samuele</h4>
+                <p class="contact-last-message">Non poteva essere altrimenti</p>
+              </div>
+              <!-- /contact text -->
+              <!-- contact avatar -->
+
+              <div class="contact-time">10:35</div>
+            </li>
+            <!-- /contact -->
+          </ul>
+          <!-- /contacts -->
+        </div>
+        <!-- /col left -->
+        <!-- col rigth -->
+        <div class="col-right float-left">
+          <!-- header col right -->
+          <div class="header">
+            <!-- avatar -->
+            <div class="avatar">
+              <div class="avatar-img">
+                <img src="img/avatar_io.jpg" alt="Immagine Avatar">
+              </div>
+              <div class="avatar-text">
+                <h4 class="avatar-name">Samuele</h4>
+                <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
+              </div>
+            </div>
+            <!-- /avatar -->
+            <!-- icons header -->
+            <ul class="icons list-inline">
+              <li><i class="fas fa-circle-notch"></i></li>
+              <li><i class="fas fa-comment-alt"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+            <!-- /icons header -->
+          </div>
+          <!-- /header col right -->
+          <!-- chat container -->
+          <div class="chat">
+            <!-- message -->
+            <div class="message-row">
+              <div class="message">
+                <div class="message-text">Come stai?</div>
+                <div class="message-time">11:05</div>
+              </div>
+            </div>
+            <!-- /message -->
+            <!-- message -->
+            <div class="message-row sent">
+              <div class="message">
+                <div class="message-text">Come stai?</div>
+                <div class="message-time">11:05</div>
+              </div>
+            </div>
+            <!-- /message -->
+            <!-- message -->
+            <div class="message-row sent">
+              <div class="message">
+                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="message-time">11:05</div>
+              </div>
+            </div>
+            <!-- /message -->
+          </div>
+          <!-- /chat container -->
+          <!-- footer col rigth -->
+          <div class="footer">
+            <div class="footer-icon">
+              <i class="far fa-smile" aria-hidden="true"></i>
+            </div>
+            <input id="input-message" type="text" placeholder="Scrivi il messaggio">
+            <div class="footer-icon">
+              <i class="send-message fa fa-paper-plane" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- /footer col rigth -->
+        </div>
+        <!-- /col rigth -->
+      </div>
+      <!-- /app container -->
+    </div>
+    <!-- /page wrapper -->
+
+    <!-- templates -->
+    <div class="templates">
+
+      <div class="message-row">
+        <div class="message">
+          <div class="message-text"></div>
+          <div class="message-time"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /templates -->
+
+  <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
