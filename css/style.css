@@ -175,6 +175,10 @@
   height: calc(100% - 140px);
   padding: 50px;
   overflow-y: scroll;
+  display: none;
+}
+.chat.active {
+  display: block;
 }
 
 /* message */
