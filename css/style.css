@@ -147,6 +147,7 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .contact .avatar {
   height: 60px;
@@ -163,6 +164,10 @@
   align-self: flex-start;
   margin-top: 5px;
 }
+
+.contact.active {
+  background-color: grey;
+}
 /* /contacts */
 
 /* /COL LEFT */
@@ -170,11 +175,14 @@
 /* COL RIGTH */
 
 /* chat */
-.chat {
+.chats-wrapper {
   background-color: grey;
   height: calc(100% - 140px);
-  padding: 50px;
   overflow-y: scroll;
+}
+.chat {
+  height: 100%;
+  padding: 50px;
   display: none;
 }
 .chat.active {
@@ -191,7 +199,7 @@
   background-color: white;
   max-width: 350px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px 30px 20px 20px;
 }
 .message-time {
   position: absolute;
@@ -199,12 +207,46 @@
   bottom: 3px;
   right: 3px;
 }
+.message-options {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  right: 8px;
+  color: #B1B1B1;
+  cursor: pointer;
+}
+.message-actions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-width: 300px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 2px 1px 10px #555;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+.message-actions li {
+  padding: 5px  0;
+  cursor: pointer;
+}
 
 .message-row.sent {
   justify-content: flex-end;
 }
 .message-row.sent .message {
   background-color: lightgreen;
+}
+.message-row.sent .message .message-actions {
+  left: auto;
+  right: 0;
+}
+
+.message:hover .message-options {
+  display: block;
 }
 /* /message */
 
